@@ -21,8 +21,8 @@ ipsw="" # IF YOU WERE TOLD TO PUT A CUSTOM IPSW URL, PUT IT HERE. YOU CAN FIND T
 version="1.4.1"
 os=$(uname)
 dir="$(pwd)/binaries/$os"
-commit=$(git rev-parse --short HEAD)
-branch=$(git rev-parse --abbrev-ref HEAD)
+#commit=$(git rev-parse --short HEAD)
+#branch=$(git rev-parse --abbrev-ref HEAD)
 max_args=1
 arg_count=0
 disk=8
@@ -405,11 +405,11 @@ chmod +x "$dir"/*
 # Start
 # ============
 
-if [ ! "$gui" = "1" ]; then
-  echo "palera1n | Version $version-$branch-$commit"
-  echo "Written by Nebula and Mineek | Some code and ramdisk from Nathan"
-  echo ""
-fi
+#if [ ! "$gui" = "1" ]; then
+#  echo "palera1n | Version $version-$branch-$commit"
+#  echo "Written by Nebula and Mineek | Some code and ramdisk from Nathan"
+#  echo ""
+#fi
 
 
 version=""
